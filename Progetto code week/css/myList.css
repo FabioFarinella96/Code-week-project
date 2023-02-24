@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  position: relative;
+}
+
+/* header  */
+
+.header {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  border-bottom: 1px solid rgb(222, 222, 222);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header .nav-bar a {
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.header .nav-bar a:first-child {
+  color: rgb(224, 97, 97);
+  font-weight: 700;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
+.header .logo-image {
+  width: 180px;
+  cursor: pointer;
+}
+
+/* main  */
+
+.search-section {
+  width: 800px;
+  height: 100px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.search-section input {
+  font-size: 18px;
+  padding: 8px 10px;
+  border: 1px solid rgb(199, 199, 199);
+  outline-color: rgb(205, 205, 205);
+  border-radius: 8px;
+}
+
+.search-section button {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(224, 97, 97);
+  padding: 9px 10px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-section button:active {
+  background-color: rgb(255, 125, 125);
+}
+
+/* research content  */
+
+.container {
+  width: 100%;
+  height: 70vh;
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container .card {
+  width: 600px;
+  height: 500px;
+  border: 1px solid rgb(207, 207, 207);
+  padding: 20px;
+}
+
+/* cards  */
+
+.card {
+  width: 700px;
+  height: 500px;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  position: relative;
+}
+
+.card .card-image {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+
+.card .card-title {
+  font-size: 3em;
+  color: rgb(28, 28, 28);
+}
+
+.card .card-description {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.card .card-button {
+  width: 230px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid rgb(203, 203, 203);
+  border-radius: 5px;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  padding: 8px 15px;
+  position: absolute;
+  bottom: 162px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: rgb(42, 42, 42);
+}
+
+.card-button:active {
+  background-color: rgb(87, 87, 87);
+}
+
+@media screen and (max-width: 992px) {
+  .header .nav-bar a {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .header .logo-image {
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .search-section {
+    width: 500px;
+    height: 100px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .search-section input {
+    font-size: 15px;
+    padding: 10px 15px;
+    border: 1px solid rgb(199, 199, 199);
+    outline-color: rgb(205, 205, 205);
+    border-radius: 8px;
+  }
+
+  .search-section button {
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(224, 97, 97);
+    padding: 6px 15px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+/* come back  */
+
+.comeback {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  background-color: rgb(237, 84, 84);
+  border-radius: 50%;
+  position: absolute;
+  position: fixed;
+  z-index: 2;
+  bottom: 40px;
+  right: 15px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.comeback:active {
+  background-color: rgb(255, 163, 163);
+}
+
+.comeback img {
+  width: 100%;
+}

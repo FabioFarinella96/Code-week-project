@@ -1,0 +1,618 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  position: relative;
+}
+
+/* header  */
+
+.header {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  border-bottom: 1px solid rgb(222, 222, 222);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 2;
+}
+
+.header .nav-bar a {
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.header .nav-bar a:first-child {
+  color: rgb(224, 97, 97);
+  font-weight: 700;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
+.header .logo-image {
+  width: 180px;
+  cursor: pointer;
+}
+
+/* hero  */
+
+.hero {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+}
+
+.hero .hero-title {
+  font-size: 3em;
+  color: rgb(41, 41, 41);
+  font-weight: 200;
+}
+
+.hero-image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 400px;
+}
+
+.hero .research {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 20px;
+}
+
+.research .left-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.research .search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.research .input {
+  font-size: 16px;
+  padding: 8px 15px;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 5px;
+  outline-color: #d9d9d9;
+}
+
+.research .searchButton {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 6px 15px;
+  color: white;
+  background-color: rgb(224, 97, 97);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.research .searchButton:active {
+  background-color: rgb(255, 163, 163);
+}
+
+/* main section  */
+
+.main-section {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* france section  */
+
+.main-section .france-section {
+  width: 100%;
+  margin-bottom: 100px;
+  padding-bottom: 40px;
+  border: 1px solid rgb(226, 226, 226);
+  box-shadow: 3px 3px 3px rgba(163, 163, 163, 0.3);
+  border-radius: 8px;
+}
+
+.france-section .france-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* france hero  */
+
+.france-section .france-hero {
+  width: 100%;
+  height: 20vh;
+  box-shadow: 6px 6px 6px rgba(255, 255, 255, 0.3);
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.france-hero .hero-title {
+  font-size: 6em;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 25px;
+  right: 41%;
+  z-index: 1;
+}
+
+.france-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+/* italy section  */
+
+.main-section .italy-section {
+  width: 100%;
+  margin-bottom: 100px;
+  padding-bottom: 40px;
+  border: 1px solid rgb(226, 226, 226);
+  box-shadow: 3px 3px 3px rgba(163, 163, 163, 0.3);
+}
+
+.italy-section .italy-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* italy hero  */
+
+.italy-section .italy-hero {
+  width: 100%;
+  height: 20vh;
+  box-shadow: 6px 6px 6px rgba(245, 245, 245, 0.3);
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.italy-hero .hero-title {
+  font-size: 6em;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 30px;
+  right: 44%;
+  z-index: 1;
+}
+
+.italy-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+/* spain section  */
+
+.main-section .spain-section {
+  width: 100%;
+  border: 1px solid rgb(226, 226, 226);
+  box-shadow: 3px 3px 3px rgba(163, 163, 163, 0.3);
+  border-radius: 8px;
+  padding-bottom: 40px;
+  margin-bottom: 100px;
+}
+
+.spain-section .spain-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* spain hero  */
+
+.spain-section .spain-hero {
+  width: 100%;
+  height: 20vh;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.spain-hero .hero-title {
+  font-size: 6em;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 30px;
+  right: 42%;
+  z-index: 1;
+}
+
+.spain-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+/* portugal section  */
+
+.main-section .portugal-section {
+  width: 100%;
+  border: 1px solid rgb(226, 226, 226);
+  box-shadow: 3px 3px 3px rgba(163, 163, 163, 0.3);
+  border-radius: 8px;
+  padding-bottom: 40px;
+  margin-bottom: 100px;
+}
+
+.portugal-section .portugal-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* portugal hero  */
+
+.portugal-section .portugal-hero {
+  width: 100%;
+  height: 20vh;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.portugal-hero .hero-title {
+  font-size: 6em;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 22px;
+  right: 39%;
+  z-index: 1;
+}
+
+.portugal-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+/* greece section  */
+
+.main-section .greece-section {
+  width: 100%;
+  border: 1px solid rgb(226, 226, 226);
+  box-shadow: 2px 2px 2px rgba(182, 182, 182, 0.3);
+  border-radius: 8px;
+  padding-bottom: 40px;
+  margin-bottom: 100px;
+}
+
+.greece-section .greece-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* greece hero  */
+
+.greece-section .greece-hero {
+  width: 100%;
+  height: 20vh;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.greece-hero .hero-title {
+  font-size: 6em;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 22px;
+  right: 43%;
+  z-index: 1;
+}
+
+.greece-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+/* germany section  */
+
+.main-section .germany-section {
+  width: 100%;
+  border: 1px solid rgb(226, 226, 226);
+  box-shadow: 3px 3px 3px rgba(166, 166, 166, 0.3);
+  border-radius: 8px;
+  padding-bottom: 40px;
+  margin-bottom: 100px;
+}
+
+.germany-section .germany-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* germany hero  */
+
+.germany-section .germany-hero {
+  width: 100%;
+  height: 20vh;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.germany-hero .hero-title {
+  font-size: 6em;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 22px;
+  right: 39%;
+  z-index: 1;
+}
+
+.germany-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+/* cards  */
+
+.card {
+  width: 700px;
+  height: 500px;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  position: relative;
+}
+
+.card .card-image {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+
+.card .card-title {
+  font-size: 3em;
+  color: rgb(224, 97, 97);
+}
+
+.card .card-description {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.card .card-button {
+  width: 150px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid rgb(203, 203, 203);
+  border-radius: 5px;
+  background-color: rgb(237, 84, 84);
+  color: white;
+  padding: 10px 9px;
+  position: absolute;
+  bottom: 162px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: rgb(255, 109, 109);
+}
+
+.card-button:active {
+  background-color: rgb(255, 166, 166);
+}
+
+/* footer  */
+
+.footer {
+  width: 100%;
+  height: 20vh;
+  border-top: 1px solid rgb(214, 214, 214);
+  position: absolute;
+  bottom: -250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.footer .info-footer {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer .follow-us {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.follow-us h4 {
+  font-size: 20px;
+  color: rgb(70, 70, 70);
+}
+
+.follow-us .follow-us-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.follow-us .follow-us-list a {
+  text-decoration: none;
+  color: rgb(4, 4, 4);
+}
+
+.follow-us-list a:hover {
+  text-decoration: underline;
+}
+
+/* come back  */
+
+.comeback {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  background-color: rgb(237, 84, 84);
+  border-radius: 50%;
+  position: absolute;
+  position: fixed;
+  z-index: 2;
+  bottom: 40px;
+  right: 15px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.comeback:active {
+  background-color: rgb(255, 163, 163);
+}
+
+.comeback img {
+  width: 100%;
+}
+
+/* research content  */
+
+.research-container {
+  width: 100%;
+  height: 70vh;
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.research-container .research-card {
+  width: 600px;
+  height: 500px;
+  border: 1px solid;
+  padding: 20px;
+}
+
+/* responsive  */
+
+@media screen and (max-width: 992px) {
+  .header .nav-bar a {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .header .logo-image {
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .hero .research .input {
+    font-size: 16px;
+    padding: 6px 10px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 5px;
+    outline-color: #d9d9d9;
+  }
+
+  .hero .search-bar .searchButton {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 3px 7px;
+    color: white;
+    background-color: rgb(224, 97, 97);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .hero .hero-title {
+    font-size: 2em;
+    color: rgb(41, 41, 41);
+    font-weight: 200;
+  }
+
+  .hero img {
+    width: 220px;
+  }
+  .card {
+    width: 500px;
+    height: 300px;
+  }
+
+  .card .card-image {
+    width: 100%;
+    height: 150px;
+  }
+
+  .card .card-title {
+    font-size: 2em;
+  }
+
+  .card .card-description {
+    font-size: 14px;
+  }
+
+  .card .card-button {
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 75px;
+    right: 20px;
+    cursor: pointer;
+  }
+}
